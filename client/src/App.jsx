@@ -3,17 +3,21 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import { TodoListCard } from './components/TodoListCard';
 import { Greeting } from './components/Greeting';
+import { ThemeToggle } from './components/ThemeToggle';
 
 function App() {
     return (
-        <Container>
-            <Row>
-                <Col md={{ offset: 3, span: 6 }}>
-                    <Greeting />
-                    <TodoListCard />
-                </Col>
-            </Row>
-        </Container>
+        <>
+            <ThemeToggle />
+            <Container>
+                <Row>
+                    <Col md={{ offset: 3, span: 6 }}>
+                        <Greeting />
+                        <TodoListCard />
+                    </Col>
+                </Row>
+            </Container>
+        </>
     );
 }
 
